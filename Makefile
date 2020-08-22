@@ -11,9 +11,9 @@ SafariInjector_GENERATOR = internal
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
-after-install::
-	install.exec "killall -9 MobileSMS"
-	install.exec "killall -9 MobileMail"
-	install.exec "killall -9 MobileCal"
-	install.exec "killall -9 Maps"
-	install.exec "killall -9 MobileNotes"
+# after-install::
+# 	install.exec "killall -9 MobileSMS"
+# 	install.exec "killall -9 MobileMail"
+# 	install.exec "killall -9 MobileCal"
+# 	install.exec "killall -9 Maps"
+# 	install.exec "killall -9 MobileNotes"
