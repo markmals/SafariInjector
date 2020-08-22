@@ -6,7 +6,7 @@ TWEAK_NAME = SafariInjector
 
 SafariInjector_FILES = SafariInjector.x Utilities.m
 SafariInjector_FRAMEWORKS = UIKit SafariServices
-SafariInjector_CFLAGS = -fobjc-arc
+SafariInjector_CFLAGS = -fobjc-arc -Wno-deprecated-declarations
 SafariInjector_GENERATOR = internal
 
 include $(THEOS_MAKE_PATH)/tweak.mk
