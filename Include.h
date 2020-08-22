@@ -1,11 +1,3 @@
-//
-//  Includes.h
-//  SafariInjector
-//  
-//  Created by Mark Malstrom on 2020-08-22
-//  Copyright © 2020 Mark Malstrom. All rights reserved.
-//
-
 #define let __auto_type const
 
 #pragma mark Imports
