@@ -8,27 +8,6 @@
 
 #import "Includes.h"
 
-%group Maps
-%hook MKPlaceInfoViewController
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	CNPropertySimpleCell *cell = (id)[tableView cellForRowAtIndexPath: indexPath];
-    BOOL isHomepage = [cell.labelLabel.text isEqual:@"Homepage"];
-
-	if (isHomepage) {
-		NSURL *url = [NSURL URLWithString:cell.valueLabel.text];
-		if (SIJShouldPresentSVC(url)) {
-			return SIJPresentSVCWithURLOnVC(url, self);
-		}
-	}
-
-	return %orig(tableView, indexPath);
-}
-
-%end
-%end
-
-%group All
 %hook UIApplication
 
 - (BOOL)openURL:(NSURL *)url {
@@ -39,18 +18,16 @@
 	}
 }
 
-%end
-%end
+- (void)openURL:(NSURL *)url
+        options:(NSDictionary *)options
+		completionHandler:(void (^)(BOOL success))completion {
 
-%ctor {
-	%init;
-
-	NSString *appName = NSBundle.mainBundle.localizedInfoDictionary[@"CFBundleDisplayName"];
-    BOOL appIsMaps = [appName isEqualToString:@"Maps"];
-
-    %init(All);
-
-	if (appIsMaps) {
-        %init(Maps);
-    }
+	if (SIJShouldPresentSVC(url)) {
+        SIJPresentSVCOnRootVCWithURL(url);
+		completion(true);
+	} else {
+		%orig(url, options, completion);
+	}
 }
+
+%end
