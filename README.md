@@ -4,8 +4,9 @@ A simple iOS jailbreak tweak to inject [Safari View Controller](https://develope
 
 #### Supported Apps:
 
-* Messages
-* Mail
-* Calendar
-* Maps
-* Notes
+* [x] Messages
+* [ ] Mail
+* [ ] Calendar
+* [x] Maps
+* [x] Notes
+* [x] Github
