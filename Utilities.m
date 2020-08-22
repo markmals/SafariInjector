@@ -2,6 +2,9 @@
 
 void SIJPresentSVCWithURLOnVC(NSURL *url, UIViewController *vc) {
     let sfvc = [[SFSafariViewController alloc] initWithURL:url];
+    // FIXME: Make this work
+    // A good test app is Notes, SVC's controls should be yellow, like the app's global tint
+    sfvc.preferredBarTintColor = UIApplication.sharedApplication.delegate.window.tintColor;
     [vc presentViewController:sfvc animated:YES completion:nil];
 }
 
