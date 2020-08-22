@@ -2,8 +2,8 @@
 //  SafariInjector.x
 //  SafariInjector
 //  
-//  Created by Tanner Bennett on 2020-08-22
-//  Copyright © 2020 Tanner Bennett. All rights reserved.
+//  Created by Mark Malstrom on 2020-08-22
+//  Copyright © 2020 Mark Malstrom. All rights reserved.
 //
 
 #import "Includes.h"

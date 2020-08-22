@@ -2,7 +2,7 @@
 //  Includes.h
 //  SafariInjector
 //  
-//  Created by Tanner Bennett on 2020-08-22
+//  Created by Mark Malstrom on 2020-08-22
 //  Copyright © 2020 Mark Malstrom. All rights reserved.
 //
 
