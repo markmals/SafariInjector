@@ -1,12 +1,5 @@
-//
-//  SafariInjector.x
-//  SafariInjector
-//  
-//  Created by Mark Malstrom on 2020-08-22
-//  Copyright © 2020 Mark Malstrom. All rights reserved.
-//
+#import "Include.h"
 
-#import "Includes.h"
 
 %hook UIApplication
 

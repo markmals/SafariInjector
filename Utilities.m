@@ -1,12 +1,4 @@
-//
-//  Utilities.m
-//  SafariInjector
-//  
-//  Created by Mark Malstrom on 2020-08-22
-//  Copyright © 2020 Mark Malstrom. All rights reserved.
-//
-
-#import "Includes.h"
+#import "Include.h"
 
 void SIJPresentSVCWithURLOnVC(NSURL *url, UIViewController *vc) {
     let sfvc = [[SFSafariViewController alloc] initWithURL:url];
