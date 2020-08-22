@@ -14,7 +14,7 @@ BOOL SIJPresentSVCOnRootVCWithURL(NSURL *url) {
 
 BOOL SIJShouldPresentSVC(NSURL *url) {
     // If the URL has a custom scheme (e.g. apollo://) don't open it in Safari View Controller
-    if (![url.scheme hasPrefix:@"http"] || ![url.scheme hasPrefix:@"https"]) {
+    if (![url.scheme hasPrefix:@"http"]) {
         return NO;
     }
     
@@ -22,7 +22,7 @@ BOOL SIJShouldPresentSVC(NSURL *url) {
     
     // Skip deep links for installed apps
     for (NSString *domain in excludedDomains) {
-        let matchesURL = [url.host isEqualToString:domain];
+        let matchesURL = [url.host hasSuffix:domain];
         let canOpenURL = [[UIApplication sharedApplication] canOpenURL:url];
 
         if (matchesURL && canOpenURL) {
