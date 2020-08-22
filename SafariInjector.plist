@@ -1,0 +1,11 @@
+{
+	Filter = {
+		Bundles = (
+			"com.apple.MobileSMS",
+			"com.apple.mobilemail",
+			"com.apple.mobilecal",
+			"com.apple.Maps",
+			"com.apple.mobilenotes",
+		);
+	};
+}

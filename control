@@ -1,0 +1,8 @@
+Package: me.malstrom.safariinjector
+Name: SafariInjector
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Inject Safari View Controller into various apps.
+Maintainer: Mark Malström
+Author: Mark Malström
+Section: Tweaks
