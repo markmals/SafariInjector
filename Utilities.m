@@ -16,8 +16,7 @@ void SIJPresentSVCWithURLOnVC(NSURL *url, UIViewController *vc) {
 BOOL SIJPresentSVCOnRootVCWithURL(NSURL *url) {
     // Get the current view controller onto which we will push SFVC
 	let rootVC = (UISplitViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-	let navigationVC = (UINavigationController *)rootVC.viewControllers.firstObject;
-    SIJPresentSVCWithURLOnVC(url, navigationVC);
+    SIJPresentSVCWithURLOnVC(url, rootVC);
     return YES;
 }
 
