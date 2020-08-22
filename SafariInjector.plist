@@ -6,6 +6,7 @@
 			"com.apple.mobilecal",
 			"com.apple.Maps",
 			"com.apple.mobilenotes",
+			"com.github.stormbreaker.prod"
 		);
 	};
 }

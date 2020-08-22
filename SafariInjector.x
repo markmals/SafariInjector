@@ -38,8 +38,9 @@
     // let isCalendar = [bundleID isEqualToString:@"com.apple.mobilecal"];
     // let isNotes = [bundleID isEqualToString:@"com.apple.mobilenotes"];
     // let isMaps = [bundleID isEqualToString:@"com.apple.Maps"];
+    // let isGitHub = [bundleID isEqualToString:@"com.github.stormbreaker.prod"];
 
-    let isURLOpenable = YES; // isMessages || isNotes || isMaps;
+    let isURLOpenable = YES; // isMessages || isNotes || isMaps || isGitHub;
 	// let isNotURLOpenable = isMail || isCalendar;
 
     if (isURLOpenable) {
