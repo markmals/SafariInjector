@@ -4,7 +4,7 @@ include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = SafariInjector
 
-SafariInjector_FILES = SafariInjector.x
+SafariInjector_FILES = SafariInjector.x Utilities.m
 SafariInjector_FRAMEWORKS = UIKit SafariServices
 SafariInjector_CFLAGS = -fobjc-arc
 SafariInjector_GENERATOR = internal
